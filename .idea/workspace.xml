@@ -32,37 +32,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fsm_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fsm_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.20024271">
+            <state line="51" column="28" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state_transition_map.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/state_transition_map.rb">
+      <file leaf-file-name="hokm_game.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+            <state line="10" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/state.rb">
+      <file leaf-file-name="hokm_game_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state_types.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/state_types.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+            <state line="21" column="11" selection-start="655" selection-end="655" vertical-scroll-proportion="0.38228154">
               <folding />
             </state>
           </provider>
@@ -84,7 +75,13 @@
         <option value="$PROJECT_DIR$/lib/state_types.rb" />
         <option value="$PROJECT_DIR$/lib/state.rb" />
         <option value="$PROJECT_DIR$/lib/state_transition_map.rb" />
+        <option value="$PROJECT_DIR$/lib/fsm/state_interface" />
+        <option value="$PROJECT_DIR$/lib/fsm/state_abstract.rb" />
         <option value="$PROJECT_DIR$/spec/fsm_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/abstract_game.rb" />
+        <option value="$PROJECT_DIR$/spec/hokmGame_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/hokm_game.rb" />
+        <option value="$PROJECT_DIR$/spec/hokm_game_spec.rb" />
       </list>
     </option>
   </component>
@@ -346,9 +343,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/notimplementederror.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
+        <state line="15" column="6" selection-start="703" selection-end="703" vertical-scroll-proportion="0.28019926">
           <folding />
         </state>
       </provider>
@@ -360,30 +357,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/state_types.rb">
+    <entry file="file://$PROJECT_DIR$/lib/fsm/state_context.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fsm/state_types.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/state.rb">
+    <entry file="file://$PROJECT_DIR$/lib/fsm/state.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+        <state line="4" column="15" selection-start="85" selection-end="85" vertical-scroll-proportion="0.07281554">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/state_transition_map.rb">
+    <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+        <state line="9" column="45" selection-start="233" selection-end="233" vertical-scroll-proportion="0.16383494">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.20024271">
+        <state line="51" column="28" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="655" selection-end="655" vertical-scroll-proportion="0.38228154">
           <folding />
         </state>
       </provider>

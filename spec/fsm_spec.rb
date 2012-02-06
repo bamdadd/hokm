@@ -1,7 +1,7 @@
 require "rspec"
-require "lib/state"
-require "lib/state_types"
-require "lib/state_transition_map"
+require "lib/fsm/state"
+require "lib/fsm/state_types"
+require "lib/fsm/state_context"
 
 describe "Finite State Machine" do
 
@@ -18,8 +18,21 @@ describe "Finite State Machine" do
     state3.state.should==state_types.END
   end
 
+  it "should create some states, define their names and their types" do
+    state_types=StateTypes.new
+    state1=State.new("state1",state_types.START)
+    state2=State.new("state2",state_types.ACTIVE)
+    state3=State.new("state3",state_types.END)
+    state1.name.should=="state1"
+    state1.state.should==state_types.START
+    state2.name.should=="state2"
+    state2.state.should==state_types.ACTIVE
+    state3.name.should=="state3"
+    state3.state.should==state_types.END
+  end
+
   it "should create a map of states and store them" do
-    stmap=StateTransitionMap.new
+    stmap=StateContext.new
 
     state_types=StateTypes.new
     state1=State.new("state1",state_types.START)
@@ -36,4 +49,14 @@ describe "Finite State Machine" do
 
 
   end
+  it "should create an arbitary object and add and state to it" do
+        anObject=2
+        anObjectState=State.new(anObject)
+        anObjectState.state= StartState
+        anObjectState.state= EndState
+
+
+  end
+
+
 end
