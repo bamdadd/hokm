@@ -35,7 +35,16 @@
       <file leaf-file-name="fsm_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="590" selection-end="590" vertical-scroll-proportion="0.3276699">
+            <state line="11" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.20024271">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state_transition_map.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/state_transition_map.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,7 +62,7 @@
       <file leaf-file-name="state_types.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/state_types.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,6 +83,7 @@
         <option value="$PROJECT_DIR$/lib/fsm.rb" />
         <option value="$PROJECT_DIR$/lib/state_types.rb" />
         <option value="$PROJECT_DIR$/lib/state.rb" />
+        <option value="$PROJECT_DIR$/lib/state_transition_map.rb" />
         <option value="$PROJECT_DIR$/spec/fsm_spec.rb" />
       </list>
     </option>
@@ -352,7 +362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/state_types.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -364,9 +374,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/state_transition_map.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="590" selection-end="590" vertical-scroll-proportion="0.3276699">
+        <state line="11" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.20024271">
           <folding />
         </state>
       </provider>
