@@ -1,7 +1,7 @@
 require 'abstract_game'
 
 class HokmGame  < AbstractGame
-  attr_accessor :player1,:player2,:player3,:player4,:cards
+  attr_accessor :player1,:player2,:player3,:player4,:deck
   def initialize
     initGame
   end

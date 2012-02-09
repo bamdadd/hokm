@@ -6,10 +6,10 @@ require "lib/fsm/state_context"
 describe "Finite State Machine" do
 
   it "should create some states, define their names and their types" do
-    state_types=StateTypes.new
-    state1=State.new("state1",state_types.START)
-    state2=State.new("state2",state_types.ACTIVE)
-    state3=State.new("state3",state_types.END)
+    state_types=StateTypes2.new
+    state1=State2.new("state1",state_types.START)
+    state2=State2.new("state2",state_types.ACTIVE)
+    state3=State2.new("state3",state_types.END)
     state1.name.should=="state1"
     state1.state.should==state_types.START
     state2.name.should=="state2"
@@ -19,10 +19,10 @@ describe "Finite State Machine" do
   end
 
   it "should create some states, define their names and their types" do
-    state_types=StateTypes.new
-    state1=State.new("state1",state_types.START)
-    state2=State.new("state2",state_types.ACTIVE)
-    state3=State.new("state3",state_types.END)
+    state_types=StateTypes2.new
+    state1=State2.new("state1",state_types.START)
+    state2=State2.new("state2",state_types.ACTIVE)
+    state3=State2.new("state3",state_types.END)
     state1.name.should=="state1"
     state1.state.should==state_types.START
     state2.name.should=="state2"
@@ -34,16 +34,16 @@ describe "Finite State Machine" do
   it "should create a map of states and store them" do
     stmap=StateContext.new
 
-    state_types=StateTypes.new
-    state1=State.new("state1",state_types.START)
+    state_types=StateTypes2.new
+    state1=State2.new("state1",state_types.START)
     stmap.add(state1)
     stmap.include?(state1).should==true
 
-    state2=State.new("state2",state_types.ACTIVE)
+    state2=State2.new("state2",state_types.ACTIVE)
     stmap.add(state2)
     stmap.include?(state2).should==true
 
-    state3=State.new("state3",state_types.END)
+    state3=State2.new("state3",state_types.END)
     stmap.add(state3)
     stmap.include?(state3).should==true
 
@@ -51,7 +51,7 @@ describe "Finite State Machine" do
   end
   it "should create an arbitary object and add and state to it" do
         anObject=2
-        anObjectState=State.new(anObject)
+        anObjectState=State2.new(anObject)
         anObjectState.state= StartState
         anObjectState.state= EndState
 
