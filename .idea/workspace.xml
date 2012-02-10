@@ -68,37 +68,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hokm_game_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
+      <file leaf-file-name="team_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/team_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0">
+            <state line="29" column="29" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hokm_game.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
+      <file leaf-file-name="team.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/team.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+            <state line="17" column="23" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state_transition_map.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/fsm/state_transition_map.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abstract_game.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="abstract_game.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+            <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.35472974">
               <folding />
             </state>
           </provider>
@@ -114,8 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/fsm/state_interface" />
-        <option value="$PROJECT_DIR$/lib/fsm/state_abstract.rb" />
         <option value="$PROJECT_DIR$/spec/fsm_spec.rb" />
         <option value="$PROJECT_DIR$/lib/abstract_game.rb" />
         <option value="$PROJECT_DIR$/spec/hokmGame_spec.rb" />
@@ -130,6 +119,8 @@
         <option value="$PROJECT_DIR$/spec/player_spec.rb" />
         <option value="$PROJECT_DIR$/spec/hokm_game_spec.rb" />
         <option value="$PROJECT_DIR$/lib/hokm_game.rb" />
+        <option value="$PROJECT_DIR$/spec/team_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/team.rb" />
       </list>
     </option>
   </component>
@@ -349,20 +340,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-5" width="1382" height="781" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6713178" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6713178" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -411,105 +402,96 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="117" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/card_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="96" selection-start="78" selection-end="78" vertical-scroll-proportion="0.1266892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/card.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="202" selection-end="202" vertical-scroll-proportion="0.15202703">
-          <folding />
-        </state>
+        <state line="6" column="40" selection-start="202" selection-end="202" vertical-scroll-proportion="0.15202703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/deck_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="618" selection-end="618" vertical-scroll-proportion="0.6081081">
-          <folding />
-        </state>
+        <state line="24" column="2" selection-start="618" selection-end="618" vertical-scroll-proportion="0.6081081" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/hand.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="2" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/player.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/deck.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="34" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="28" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="19" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/hand_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="243" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="10" selection-start="243" selection-end="259" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/suit.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="121" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="121" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/player_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="51" column="28" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/deck.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="64" column="34" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
+    <entry file="file://$PROJECT_DIR$/lib/fsm/state_transition_map.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+        <state line="4" column="16" selection-start="80" selection-end="80" vertical-scroll-proportion="0.10135135">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+        <state line="5" column="10" selection-start="141" selection-end="141" vertical-scroll-proportion="0.1266892">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fsm/state_transition_map.rb">
+    <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.7972973">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/player_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/integer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="6" selection-start="1967" selection-end="1967" vertical-scroll-proportion="2.6604729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/team_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="29" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/team.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.35472974">
           <folding />
         </state>
       </provider>
