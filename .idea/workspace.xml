@@ -26,16 +26,7 @@
       <file leaf-file-name="hand_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/hand_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="10" selection-start="243" selection-end="259" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="suit.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/suit.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="121" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="13" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,6 +68,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="hakem_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/hakem_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="12" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hakem.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/hakem.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="9" selection-start="209" selection-end="209" vertical-scroll-proportion="0.38006756">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/player.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="team.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/team.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="abstract_game.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="abstract_game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.35472974">
+            <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,8 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/fsm_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/abstract_game.rb" />
         <option value="$PROJECT_DIR$/spec/hokmGame_spec.rb" />
         <option value="$PROJECT_DIR$/spec/card_spec.rb" />
         <option value="$PROJECT_DIR$/lib/card.rb" />
@@ -114,13 +130,15 @@
         <option value="$PROJECT_DIR$/lib/deck.rb" />
         <option value="$PROJECT_DIR$/spec/deck_spec.rb" />
         <option value="$PROJECT_DIR$/lib/hand.rb" />
-        <option value="$PROJECT_DIR$/lib/player.rb" />
         <option value="$PROJECT_DIR$/lib/suit.rb" />
         <option value="$PROJECT_DIR$/spec/player_spec.rb" />
         <option value="$PROJECT_DIR$/spec/hokm_game_spec.rb" />
         <option value="$PROJECT_DIR$/lib/hokm_game.rb" />
         <option value="$PROJECT_DIR$/spec/team_spec.rb" />
         <option value="$PROJECT_DIR$/lib/team.rb" />
+        <option value="$PROJECT_DIR$/spec/hakem_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/player.rb" />
+        <option value="$PROJECT_DIR$/lib/hakem.rb" />
       </list>
     </option>
   </component>
@@ -402,39 +420,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/card.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="202" selection-end="202" vertical-scroll-proportion="0.15202703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/deck_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="618" selection-end="618" vertical-scroll-proportion="0.6081081" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/hand.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="2" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/player.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/hand_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="243" selection-end="259" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/suit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="121" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="28" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/deck.rb">
@@ -463,11 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/player_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/integer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="6" selection-start="1967" selection-end="1967" vertical-scroll-proportion="2.6604729">
@@ -475,9 +463,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/player_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/team_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="29" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -489,9 +489,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/abstract_game.rb">
+    <entry file="file://$PROJECT_DIR$/spec/fsm_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="309" selection-end="309" vertical-scroll-proportion="0.35472974">
+        <state line="51" column="28" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/hand_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/hakem_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="12" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/player.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hakem.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="9" selection-start="209" selection-end="209" vertical-scroll-proportion="0.38006756">
           <folding />
         </state>
       </provider>
