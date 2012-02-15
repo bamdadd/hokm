@@ -19,6 +19,6 @@ class HokmGame  < AbstractGame
   end
 
   def chooseHakem()
-    @player1
+     #return one player
   end
 end

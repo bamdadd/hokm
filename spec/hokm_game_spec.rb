@@ -1,46 +1,36 @@
 require "rspec"
 require "../lib/hokm_game"
-require "pp"
+require "../lib/hakem"
+require "../lib/suit"
+require "../lib/table"
 
 describe HokmGame do
 
-  #it "shoud initGame" do
-  #  game=HokmGame.new
-  #  player1=mock("Player")
-  #  player2=mock("Player")
-  #  player3=mock("Player")
-  #  player4=mock("Player")
-  #  players=[player1,player2,player3,player4]
-  #  game.player1=player1
-  #  game.player2=player2
-  #  game.player3=player3
-  #  game.player4=player4
-  #  cards=mock("DeckOfCards")
-  #  player1.should_receive(:cards).and_return([1,2,3,4,5,6,7,8,9,10,11,12,13])
-  #  player2.should_receive(:cards).and_return([1,2,3,4,5,6,7,8,9,10,11,12,13])
-  #  player3.should_receive(:cards).and_return([1,2,3,4,5,6,7,8,9,10,11,12,13])
-  #  player4.should_receive(:cards).and_return([1,2,3,4,5,6,7,8,9,10,11,12,13])
-  #  game.cards=cards
-  #  hakem=game.chooseHakem
-  #  players.should include(hakem)
-  #  cards.should_receive(:shuffle).and_return(true)
-  #  game.should_receive(:dealFirstRoundOfCards).and_return(true)
-  #  game.should_receive(:dealSecondRoundOfCards).and_return(true)
-  #  game.should_receive(:dealThirdRoundOFCards).and_return(true)
-  #  game.cards.shuffle
-  #  game.dealFirstRoundOfCards
-  #  hakem.should_receive(:chooseHokm).and_return("Clubs")
-  #  hokm=hakem.chooseHokm
-  #  game.dealSecondRoundOfCards
-  #  game.dealThirdRoundOFCards
-  #  player1.cards.count.should==13
-  #  player2.cards.count.should==13
-  #  player3.cards.count.should==13
-  #  player4.cards.count.should==13
-  #end
 
-  it "should start a game" do
+  it "should describe a hokm game" do
     game=HokmGame.new
+    p1=Player.new
+    p2=Player.new
+    p3=Player.new
+    p4=Player.new
+    team1=Team.new(p1,p3)
+    team2=Team.new(p2,p4)
+    hokmTable=Table.new(team1,p1,p3,team2,p2,p4)
+    hakem=game.chooseHakem
+    hakem.extend Hakem
+    hakem.hokm(Suit::CLUB)
+    currentPlayer=hakem
+    while (team1.winner?.eql?false or team2.winner?.eql?false)
+      currentPlayer.play(1)
+      3.times{
+        currentPlayer=hokmTable.nextPlayer currentPlayer
+        currentPlayer.play(1)
+      }
+      scoredPlayer=game.findScoredPlayer
+      scoredTeam=hokmTable.findTeamByPlayer scoredPlayer
+      scoredTeam.score
+      currentPlayer=scoredPlayer
+    end
 
   end
 end
