@@ -10,7 +10,7 @@ describe Deck do
 
   it "should check quarter counts" do
     @subject.getQuarter(1).count.should==13
-    pp  @subject.getQuarter(1)
+    @subject.getQuarter(1)
     @subject.getQuarter(2).count.should==13
     @subject.getQuarter(2)
     @subject.getQuarter(3).count.should==13
