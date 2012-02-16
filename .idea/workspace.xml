@@ -26,7 +26,25 @@
       <file leaf-file-name="hokm_game_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="70" selection-start="790" selection-end="790" vertical-scroll-proportion="0.732899">
+            <state line="49" column="9" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.8919903">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/table.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hokm_game.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="25" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,13 +68,13 @@
         <option value="$PROJECT_DIR$/lib/team.rb" />
         <option value="$PROJECT_DIR$/table.rb" />
         <option value="$PROJECT_DIR$/spec/table_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/hokm_game.rb" />
         <option value="$PROJECT_DIR$/decorator.rb" />
         <option value="$PROJECT_DIR$/lib/player.rb" />
         <option value="$PROJECT_DIR$/lib/decorator.rb" />
         <option value="$PROJECT_DIR$/lib/hakem.rb" />
         <option value="$PROJECT_DIR$/spec/hakem_spec.rb" />
         <option value="$PROJECT_DIR$/lib/table.rb" />
+        <option value="$PROJECT_DIR$/lib/hokm_game.rb" />
         <option value="$PROJECT_DIR$/spec/hokm_game_spec.rb" />
       </list>
     </option>
@@ -87,6 +105,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -135,8 +155,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +237,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
@@ -276,8 +293,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-5" width="1382" height="781" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="25" width="1288" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -341,112 +358,81 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spec/card_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="228" selection-end="228" vertical-scroll-proportion="0.2027027">
-          <folding />
-        </state>
+        <state line="8" column="49" selection-start="228" selection-end="228" vertical-scroll-proportion="0.2027027" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/deck_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/hakem.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="67" selection-end="67" vertical-scroll-proportion="0.12214984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/decorator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="45" selection-end="72" vertical-scroll-proportion="0.048859935">
-          <folding />
-        </state>
+        <state line="5" column="4" selection-start="67" selection-end="67" vertical-scroll-proportion="0.12214984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/hand_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/hakem_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.46416938">
-          <folding />
-        </state>
+        <state line="19" column="43" selection-start="459" selection-end="459" vertical-scroll-proportion="0.46416938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/team_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="664" selection-end="664" vertical-scroll-proportion="0.7347973">
-          <folding />
-        </state>
+        <state line="29" column="29" selection-start="664" selection-end="664" vertical-scroll-proportion="0.7347973" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/player_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.39087948">
+        <state line="16" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.39087948" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/team.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hand.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/deck.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="36" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/player.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/card.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/table.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="42" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hokm_game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="434" selection-end="434" vertical-scroll-proportion="0.51302934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/team.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hand.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/deck.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/player.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/card.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="13" column="34" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/hokm_game_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="70" selection-start="790" selection-end="790" vertical-scroll-proportion="0.732899">
+        <state line="49" column="9" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.8919903">
           <folding />
         </state>
       </provider>

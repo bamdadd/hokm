@@ -1,6 +1,6 @@
 require "team"
 class Table
-
+    attr_accessor :player1,:player2,:player3,:player4
   def initialize(team1,p1,p2,team2,p3,p4)
       @player1=p1
       @player2=p2

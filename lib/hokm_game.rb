@@ -1,7 +1,7 @@
 require 'abstract_game'
 
 class HokmGame  < AbstractGame
-  attr_accessor :player1,:player2,:player3,:player4,:deck
+  attr_accessor :table,:deck
   def initialize
     initGame
   end
@@ -19,6 +19,8 @@ class HokmGame  < AbstractGame
   end
 
   def chooseHakem()
-     #return one player
+      hakemNumber=rand(4)
+      players=[@table.player1,@table.player2,@table.player3,@table.player4]
+      players[hakemNumber]
   end
 end
