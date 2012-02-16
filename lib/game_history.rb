@@ -1,0 +1,3 @@
+class GameHistory <Array
+
+end
