@@ -5,4 +5,5 @@ class Player
   def play(card_number_in_hand)
     @hand.delete_at(card_number_in_hand)
   end
+
 end

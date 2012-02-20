@@ -25,18 +25,33 @@ describe HokmGame do
     @game.distributeHands
     hakem.hokm(Suit::CLUB)
     currentPlayer=hakem
-    while (@team1.winner?.eql?false or @team2.winner?.eql?false)
+    while (@team1.winner?.eql?false and @team2.winner?.eql?false)
+      #p "======team1=========="
+      #p @team1.getScore
+      #p @team1.winner?
+      #p "======team2=========="
+      #p @team2.getScore
+      #p @team2.winner?
+      #p "======currentPlayer=========="
+      #p currentPlayer
+      #p "=======hakem==========="
+      #p hakem
+
        @game.play(currentPlayer,1)
       3.times{
         currentPlayer=@hokmTable.nextPlayer currentPlayer
         @game.play(currentPlayer,1)
-        #currentPlayer.play(1)
       }
-
-      scoredPlayer=@game.findScoredPlayer
-      scoredTeam=@hokmTable.findTeamByPlayer scoredPlayer
-      scoredTeam.score
+      #p "========Scored Played=========="
+       scoredPlayer=@game.findScoredPlayer
+      scoredPlayer.class.should==Player
+      scoredTeam=@hokmTable.findTeamByPlayer(scoredPlayer)
+      scoredTeam.class.should==Team
+       scoredTeam.score
       currentPlayer=scoredPlayer
+       #sleep(1)
+     p "team1 won!!!  #{@team1.getScore}" if @team1.winner?
+     p "team2 won!!! #{@team2.getScore}" if @team2.winner?
     end
 
   end
@@ -45,4 +60,13 @@ describe HokmGame do
     hakem=@game.chooseHakem
     hakem.class.should==Player
   end
+
+  #it "should find the highestCardValue" do
+  #  @game.getHighestCard(1,2,3,4).should==1
+  #  @game.getHighestCard(3,4,5,6).should==6
+  #  @game.getHighestCard(2,13,11,1).should==1
+  #  @game.getHighestCard(2,13,11,10).should==13
+  #
+  #end
+
 end

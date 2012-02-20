@@ -10,21 +10,22 @@ class HokmGame  < AbstractGame
     @deck=Deck.new
     @deck.shuffle!
     @history=GameHistory.new
+    @hakem=nil
   end
   def makePlay(player)
-       raise 'this method should be overriden'
+    raise 'this method should be overriden'
   end
   def endOfGame
-       raise 'this method should be overriden'
+    raise 'this method should be overriden'
   end
   def showWinner
-      raise 'this method should be overriden'
+    raise 'this method should be overriden'
   end
 
   def chooseHakem
-      hakemNumber=rand(4)
-      players=[@table.player1,@table.player2,@table.player3,@table.player4]
-      players[hakemNumber]
+    hakemNumber=rand(4)
+    players=[@table.player1,@table.player2,@table.player3,@table.player4]
+    @hakem=players[hakemNumber]
   end
 
   def distributeHands
@@ -39,18 +40,54 @@ class HokmGame  < AbstractGame
   end
 
   def play(player,whichCard)
-   #TODO:need to remove 2 hand in the Hand object
-   move=GameMove.new(player,whichCard,player.hand.hand[whichCard])
-   @history.push move
-   player.play(whichCard)
+    #TODO:need to remove 2 hand in the Hand object
+    move=GameMove.new(player,whichCard,player.hand.hand[whichCard])
+    @history.push move
+    player.play(whichCard)
   end
 
   def findScoredPlayer
-    move4=@history.fetch(-1)
-    move3=@history.fetch(-2)
-    move2=@history.fetch(-3)
-    move1=@history.fetch(-4)
-  #  TODO: card priority logic need to be implemented somewhere and used here
-    move4.player
+    history_num=@history.count
+    move4=@history[history_num-1]
+    move3=@history[history_num-2]
+    move2=@history[history_num-3]
+    move1=@history[history_num-4]
+    moves=[move1,move2,move3,move4]
+    hokm=@hakem.getHokm
+    if(anyHokm?(moves,hokm))
+      return getHighestHokmMove(moves,hokm).player
+    else
+      return getHighestCardFromMove(move1,move2,move3,move4).player
+    end
   end
+
+
+  def anyHokm?(moves,hokm)
+    result=false
+    moves.each do |m|
+      result=true if m.cardValue.suit.eql?hokm
+    end
+    result
+  end
+  def getHighestHokmMove(moves,hokm)
+    moves_with_hokm=[]
+    moves.each {|m|
+      moves_with_hokm.push(m) if m.cardValue.suit.eql?hokm
+    }
+    moves_with_hokm.sort_by{|i|i.cardValue.number}.last
+  end
+  def getHighestCardFromMove(move1,move2,move3,move4)
+    return move1 if move1.cardValue.number.eql?1
+    return move2 if move2.cardValue.number.eql?1
+    return move4 if move3.cardValue.number.eql?1
+    return move4 if move4.cardValue.number.eql?1
+    moves=[]
+    moves.push(move1)
+    moves.push(move2) if move2.cardValue.suit.eql?move1.cardValue.suit
+    moves.push(move3) if move3.cardValue.suit.eql?move1.cardValue.suit
+    moves.sort_by{|i|i.cardValue.number}.last
+
+  end
+
+
 end

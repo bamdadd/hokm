@@ -1,6 +1,6 @@
 require "team"
 class Table
-    attr_accessor :player1,:player2,:player3,:player4
+    attr_accessor :player1,:player2,:player3,:player4,:team1,:team2
   def initialize(team1,p1,p2,team2,p3,p4)
       @player1=p1
       @player2=p2
@@ -11,8 +11,13 @@ class Table
   end
 
   def findTeamByPlayer(player)
-   return @team1 if(player.equal?@player1 or player.eql?@player2)
-   return @team2 if(player.equal?@player3 or player.eql?@player4)
+    if(@team1.players.include? (player))
+      return @team1
+    elsif(@team2.players.include? (player))
+      return @team2
+    else
+      return nil
+    end
   end
   def nextPlayer(player)
     return @player2 if player.eql?@player1

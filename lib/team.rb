@@ -1,11 +1,15 @@
 class Team
-  attr_accessor:player1,:player2
+  attr_accessor:player1,:player2, :players
 
   def initialize(p1,p2)
       @player1=p1
       @player2=p2
+      @players = []
+      @players.push(p1)
+      @players.push(p2)
       @score=0
   end
+
   def getScore
     @score
   end
@@ -13,7 +17,7 @@ class Team
       @score+=point
   end
   def winner?
-    if @score==7
+    if @score>=7
       return true
       else return false
     end
