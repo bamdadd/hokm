@@ -2,7 +2,7 @@ class AbstractGame
   def initGame
        raise 'this method should be overriden'
   end
-  def makePlay(player)
+  def play(player,which_card)
        raise 'this method should be overriden'
   end
   def endOfGame()

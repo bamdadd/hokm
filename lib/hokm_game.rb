@@ -7,19 +7,28 @@ require '../lib/game_move'
 class HokmGame  < AbstractGame
   attr_accessor :table,:deck
   def initialize
+    initGame
+  end
+  def initGame
     @deck=Deck.new
     @deck.shuffle!
     @history=GameHistory.new
     @hakem=nil
   end
-  def makePlay(player)
-    raise 'this method should be overriden'
-  end
+  def play(player,which_card)
+     #TODO:need to remove 2 hand in the Hand object
+     move=GameMove.new(player,which_card,player.hand.hand[which_card])
+     @history.push move
+     player.play(which_card)
+   end
+
   def endOfGame
     raise 'this method should be overriden'
   end
+
   def showWinner
-    raise 'this method should be overriden'
+    return @table.team1 if @table.team1.winner?
+    return @table.team2 if @table.team2.winner?
   end
 
   def chooseHakem
@@ -39,12 +48,6 @@ class HokmGame  < AbstractGame
     @table.player4.hand=hand4
   end
 
-  def play(player,whichCard)
-    #TODO:need to remove 2 hand in the Hand object
-    move=GameMove.new(player,whichCard,player.hand.hand[whichCard])
-    @history.push move
-    player.play(whichCard)
-  end
 
   def findScoredPlayer
     history_num=@history.count

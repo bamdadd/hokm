@@ -6,4 +6,8 @@ class Strategy
   def get_next_move
     raise 'this method should be overriden'
   end
+
+  def choose_hokm
+    raise "this method should be ovveriden"
+  end
 end
