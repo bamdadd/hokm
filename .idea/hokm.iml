@@ -11,6 +11,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.8.0, ruby-1.8.7-p302) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.8.0, ruby-1.8.7-p302) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.0.21, ruby-1.8.7-p302) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="colorize (v0.5.8, ruby-1.8.7-p302) [gem]" level="application" />
   </component>
 </module>
 
