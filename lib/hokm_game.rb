@@ -1,11 +1,11 @@
-require 'abstract_game'
+require '../lib/abstract_game'
 require '../lib/deck'
 require '../lib/hand'
 require '../lib/game_history'
 require '../lib/game_move'
 
 class HokmGame  < AbstractGame
-  attr_accessor :table,:deck
+  attr_accessor :table,:deck,:hakem
   def initialize
     initGame
   end

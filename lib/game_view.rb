@@ -1,4 +1,7 @@
+# encoding: utf-8
+
 require 'colorize'
+#require 'suit'
 class GameView
   def initialize
 
@@ -51,11 +54,20 @@ class GameView
         case hakem_number
           when 1
             puts "            |p3|                 ".red
-            puts "     |p2|"+get_hakem_symbol.yellow+"         |p4|          "
+            puts "     |p2|          |p4|          "
             puts "            |you|"+get_hakem_symbol.yellow
           when 2
+            puts "            |p3|                 ".red
+            puts "     |p2|"+get_hakem_symbol.yellow+"         |p4|"
+            puts "            |you|"
           when 3
+            puts "            |p3|".red+get_hakem_symbol.yellow
+            puts "     |p2|          |p4|"
+            puts "            |you|"
           when 4
+            puts "            |p3|".red
+            puts "     |p2|         |p4|"+get_hakem_symbol.yellow
+            puts "            |you|"
         end
 
       when 4
@@ -93,4 +105,34 @@ class GameView
   def get_hakem_symbol
     return "♚"
   end
+
+  def show_five_cards(hand)
+      puts "---------------------------------------------------------------------"
+    result="|"
+    for index in 0..4
+     card=hand[index]
+      if (card.number<=10)
+        result+= "#{card.number}#{get_symbol card.suit}|"
+      elsif card.number==11
+        result+= "J#{get_symbol card.suit}|"
+      elsif card.number==12
+        result+= "Q#{get_symbol card.suit}|"
+      elsif (card.number==13)
+        result+= "K#{get_symbol card.suit}|"
+      end
+    end
+    puts result
+    puts "----------------------------------------------------------------------"
+  end
+
+  def show_hokm suit
+    puts get_hakem_symbol.yellow+" = "+get_symbol(suit)
+  end
+
+  def human_player_hokm
+    puts "|0 = ".white+get_symbol(Suit::SPADE)+"|1 = ".white+get_symbol(Suit::CLUB)+"|2 = ".white+get_symbol(Suit::HEART)+
+        "|3 = ".white+get_symbol(Suit::DIAMOND)
+  end
+
+
 end

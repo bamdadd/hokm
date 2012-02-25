@@ -1,4 +1,4 @@
-require "strategy"
+require "../lib/strategy"
 require "../lib/suit"
 class NoobStrategy < Strategy
   attr_accessor:my_hand,:public_moves

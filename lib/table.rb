@@ -1,4 +1,4 @@
-require "team"
+require "../lib/team"
 class Table
     attr_accessor :player1,:player2,:player3,:player4,:team1,:team2
   def initialize(team1,p1,p2,team2,p3,p4)
@@ -11,9 +11,9 @@ class Table
   end
 
   def findTeamByPlayer(player)
-    if(@team1.players.include? (player))
+    if(@team1.players.include?(player))
       return @team1
-    elsif(@team2.players.include? (player))
+    elsif(@team2.players.include?(player))
       return @team2
     else
       return nil
