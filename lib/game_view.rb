@@ -38,8 +38,8 @@ class GameView
             puts "            |you|"+get_hakem_symbol.yellow
           when 2
             puts "            |p3|                 "
-            puts "     |P2|".red+get_hakem_symbol.yellow+"         |p4|          "
-            puts "            |you|".red
+            puts "     |P2|".red+get_hakem_symbol.yellow+"         |p4|"
+            puts "            |you|"
           when 3
             puts "            |p3|"+get_hakem_symbol.yellow
             puts "     |P2|".red+"          |p4|   "
@@ -71,14 +71,29 @@ class GameView
         end
 
       when 4
-        puts "            |p3|                 "
-    puts "     |P2|         "+"|p4|          ".red
-    puts "            |you|                "
+        case hakem_number
+          when 1
+            puts "            |p3|                 "
+            puts "     |P2|         "+"|p4|          ".red
+            puts "            |you|"+get_hakem_symbol.yellow
+          when 2
+            puts "            |p3|                 "
+            puts "     |P2|"+get_hakem_symbol.yellow+"         |p4|          ".red
+            puts "            |you|                "
+          when 3
+            puts "            |p3|"+get_hakem_symbol.yellow
+            puts "     |P2|         "+"|p4|          ".red
+            puts "            |you|                "
+          when 4
+            puts "            |p3|                 "
+            puts "     |P2|         "+"|p4|".red+get_hakem_symbol.yellow
+            puts "            |you|                "
+        end
     end
   end
 
   def show_hand(hand)
-    puts "---------------------------------------------------------------------"
+    puts "-------------------------------Your Hand-------------------------------"
     result="|"
     for index in 0..hand.size-1
      card=hand[index]
@@ -107,7 +122,7 @@ class GameView
   end
 
   def show_five_cards(hand)
-      puts "---------------------------------------------------------------------"
+      puts "-----------------------------Your Hand(5)---------------------------"
     result="|"
     for index in 0..4
      card=hand[index]
@@ -122,7 +137,7 @@ class GameView
       end
     end
     puts result
-    puts "----------------------------------------------------------------------"
+    puts "---------------------------------------------------------------------"
   end
 
   def show_hokm suit
@@ -132,6 +147,17 @@ class GameView
   def human_player_hokm
     puts "|0 = ".white+get_symbol(Suit::SPADE)+"|1 = ".white+get_symbol(Suit::CLUB)+"|2 = ".white+get_symbol(Suit::HEART)+
         "|3 = ".white+get_symbol(Suit::DIAMOND)
+  end
+
+  # @param int player_id
+  # @param Card card
+  # @return String
+  def show_player_move(player_id,card)
+    puts "Player#{player_id}".white+" played #{card.number}#{get_symbol card.suit}"
+  end
+
+  def show_scored_player(player)
+    puts "Player#{player.id_number}".white+" scored!!"
   end
 
 

@@ -1,4 +1,4 @@
-class StateTypes2
+class StateTypes
   attr_reader :START, :ACTIVE ,:END
 
   def initialize

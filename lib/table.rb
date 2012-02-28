@@ -20,9 +20,9 @@ class Table
     end
   end
   def nextPlayer(player)
-    return @player2 if player.eql?@player1
-    return @player3 if player.eql?@player2
-    return @player4 if player.eql?@player3
+    return @player3 if player.eql?@player1
+    return @player4 if player.eql?@player2
+    return @player2 if player.eql?@player3
     return @player1 if player.eql?@player4
   end
 end

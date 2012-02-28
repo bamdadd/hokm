@@ -1,4 +1,4 @@
-class State2
+class State
   attr_accessor :name,:state
 
   def initialize(name,state)

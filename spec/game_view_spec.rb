@@ -39,9 +39,9 @@ describe GameView do
 
   end
 
-  it "should show hokms" do
-    @gv.hokm
-  end
+  #it "should show hokms" do
+  #  @gv.hokm
+  #end
 
 
 end

@@ -20,8 +20,11 @@ class GameModel
    @game.table=@hokm_table
  end
  def get_hakem
-   @hakem=@game.chooseHakem
-   @hakem.extend Hakem
+   if (@hakem.eql?nil)
+     @hakem=@game.chooseHakem
+     @hakem.extend Hakem
+     @hakem
+   end
    @hakem
  end
  def distribute_hands
