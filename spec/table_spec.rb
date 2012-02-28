@@ -32,4 +32,21 @@ describe Table do
    tempTeam=table.findTeamByPlayer(p4)
    tempTeam.should==team2
   end
+  it "should create 4 players and 2 teams then try to check team numbers" do
+   p1=Player.new
+   p2=Player.new
+   p3=Player.new
+   p4=Player.new
+   team1=Team.new(p1,p3,1)
+   team2=Team.new(p2,p4,2)
+   table=Table.new(team1,p1,p3,team2,p2,p4)
+   tempTeam=table.findTeamByPlayer(p1)
+   tempTeam.id_number.should==1
+   tempTeam=table.findTeamByPlayer(p2)
+   tempTeam.id_number.should==2
+   tempTeam=table.findTeamByPlayer(p3)
+   tempTeam.id_number.should==1
+   tempTeam=table.findTeamByPlayer(p4)
+   tempTeam.id_number.should==2
+  end
 end

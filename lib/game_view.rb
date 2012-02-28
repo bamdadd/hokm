@@ -4,7 +4,9 @@ require 'colorize'
 #require 'suit'
 class GameView
   def initialize
-
+    puts "Welcome to Hokm Game by : Bamdad Dashtban (8164848)"
+    puts "Pattern-Based Software Development - University of Manchester ".red
+    puts "Team1 members are : Player1 and Player3 & Team2 members are : Player2 and Player4 "
   end
 
   def show_table(player_number,hakem_number)
@@ -153,11 +155,39 @@ class GameView
   # @param Card card
   # @return String
   def show_player_move(player_id,card)
-    puts "Player#{player_id}".white+" played #{card.number}#{get_symbol card.suit}"
+     if (card.number<=10)
+        card_number=card.number
+      elsif card.number==11
+        card_number="J"
+      elsif card.number==12
+        card_number="Q"
+      elsif (card.number==13)
+        card_number="K"
+      end
+    puts "Player#{player_id}".white+" played #{card_number}#{get_symbol card.suit}"
   end
 
   def show_scored_player(player)
     puts "Player#{player.id_number}".white+" scored!!"
+    end
+
+  def show_scored_team(team)
+    puts "Team#{team.id_number}".white+" scored!!"
+  end
+
+  def show_teams_score(team1,team2)
+    puts "--------------------------------------------------------"
+    puts "| TEAM1 : #{team1.getScore} | TEAM2: #{team2.getScore} |".yellow
+    puts "--------------------------------------------------------"
+  end
+
+  def show_winner_team(team1,team2)
+    puts "--------------------------------------------------------"
+    puts "| TEAM1 : #{team1.getScore} | TEAM2: #{team2.getScore} |".yellow
+    puts "--------------------------------------------------------"
+    puts "                      TEAM1 won!!!".white if team1.winner?
+    puts "                      TEAM2 won!!!".white if team2.winner?
+
   end
 
 
