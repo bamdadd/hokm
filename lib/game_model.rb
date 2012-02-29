@@ -10,10 +10,10 @@ class GameModel
  def initialize
    @game=HokmGame.new
    @public_moves=nil
-   @player1=PlayerFactory.get_instance
-   @player2=PlayerFactory.get_instance
-   @player3=PlayerFactory.get_instance
-   @player4=PlayerFactory.get_instance
+   @player1=PlayerFactory.new.get_player
+   @player2=PlayerFactory.new.get_player
+   @player3=PlayerFactory.new.get_player
+   @player4=PlayerFactory.new.get_player
    @team1=Team.new(@player1,@player3,1)
    @team2=Team.new(@player2,@player4,2)
    @hokm_table=Table.new(@team1,@player1,@player3,@team2,@player2,@player4)

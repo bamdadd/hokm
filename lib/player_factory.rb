@@ -1,15 +1,20 @@
 require "../lib/player"
+# Player Factory
+# This class creates Players with assigning Player.id_number
+# increamentaly to them.
+
 class PlayerFactory
   @@player=1
-  def self.get_instance
-    player=Player.new
-    player.id_number=@@player
+  @p
+
+  def initialize
+    @p=Player.new
+    @p.id_number=@@player
     @@player+=1
-    return player
+
   end
 
-  private
-  def initialize
-
+  def get_player
+    return @p
   end
 end

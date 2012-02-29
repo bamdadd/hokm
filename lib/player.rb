@@ -1,5 +1,6 @@
 require "../lib/hand"
-class Player
+require "../lib/abstract_player"
+class Player  < AbstractPlayer
     attr_accessor:hand,:strategy,:id_number
 
   def play(card_number_in_hand)

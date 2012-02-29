@@ -187,8 +187,5 @@ class GameView
     puts "--------------------------------------------------------"
     puts "                      TEAM1 won!!!".white if team1.winner?
     puts "                      TEAM2 won!!!".white if team2.winner?
-
   end
-
-
 end

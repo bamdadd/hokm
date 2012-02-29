@@ -1,3 +1,4 @@
+#Abstract Strategy class which defines the scaffold of our strategies
 class Strategy
   def initialize(my_hand,public_moves)
     raise 'this method should be overriden'

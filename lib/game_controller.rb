@@ -1,20 +1,27 @@
 require "../lib/game_model"
 require "../lib/game_view"
+# Game Controller - "C" Part of MVC pattern
+# This class is responsible to connect Model to View
+# and factor out any hardcoding of other layers in Model or View
 class GameController
-  system("clear")
-  model=GameModel.new
-  view=GameView.new
-  model.distribute_hands
-  model.initialize_players
+  def self.init
+    system("clear")
+    model=GameModel.new
+    view=GameView.new
+    model.distribute_hands
+    model.initialize_players
+    return model, view
+  end
+
+  model, view = init()
+
   hakem=model.get_hakem
-  #pp hakem
   if hakem.id_number==1
     puts "You are hakem".red
     view.show_five_cards(hakem.hand.hand)
     view.human_player_hokm
   end
   model.hokm hakem.strategy.choose_hokm
-  #view.show_hokm model.hakem.getHokm
 
   current_player=hakem
   while (model.team1.winner?.eql?false and model.team2.winner?.eql?false)

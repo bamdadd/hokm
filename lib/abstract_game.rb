@@ -1,3 +1,7 @@
+# this class shows how a card-base game can be defined, therefore
+# if we want to implement a new card-based game we just have to
+# work with this prototype.
+# This is usage of Template Method
 class AbstractGame
   def initGame
        raise 'this method should be overriden'

@@ -4,6 +4,7 @@ require '../lib/hand'
 require '../lib/game_history'
 require '../lib/game_move'
 
+# Implementation of Template Method pattern
 class HokmGame  < AbstractGame
   attr_accessor :table,:deck,:hakem
   def initialize
