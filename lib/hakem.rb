@@ -1,8 +1,6 @@
-require "../lib/decorator"
 
 
 module Hakem
-  #include Decorator
     def hokm(suit)
       @hokm=suit
   end

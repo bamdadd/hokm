@@ -1,3 +1,5 @@
+#abstract player
+#shows structure of a Player without implementation
 class AbstractPlayer
   class Player
     attr_accessor:hand,:strategy,:id_number

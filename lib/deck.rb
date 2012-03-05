@@ -1,5 +1,6 @@
 require "../lib/card"
 require "../lib/suit"
+#Representation of deck of cards into a class
 class Deck
   def initialize
     @deck=[
@@ -57,10 +58,12 @@ class Deck
       Card.new(Suit::DIAMOND,13)
     ]
   end
-
+  #randomly shuffle the cards
   def shuffle!
     @deck.shuffle!
   end
+  #@param Integer which quarter
+  #@return Hand
   def getQuarter(q)
     raise "NotValidQuarterValue" if q>4
     @deck[((q-1)*13)..(q*13-1)]
